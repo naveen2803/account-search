@@ -7,8 +7,8 @@ describe('project-search-app App', function() {
     page = new ProjectSearchAppPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display message saying Client Accounts', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Client Accounts');
   });
 });
