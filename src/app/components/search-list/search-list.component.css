@@ -1,0 +1,62 @@
+.subheadingStyle {
+    color: #91989b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.searchBoxStyle {
+    background: #253238;
+    border-color: #394d56;
+    height: 80px;
+    font-size: 30px;
+    color: #fefffe;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearBtnStyle {
+    height: 80px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    background: #394d56;
+    color: #fefffe;
+}
+
+.clearBtnDisableStyle {
+    height: 80px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    background: #394d56;
+    color: #b2b3b3;
+}
+
+.projectContainerStyle {
+    min-height: 200px;
+    margin: 20px 10px; 
+    padding: 15px 0px 0px 0px;
+    border: 1px solid #394d56;
+    border-radius: 7px;
+    -webkit-box-shadow: -1px 1px 4px 3px #222222;
+    -moz-box-shadow:    -1px 1px 4px 3px #222222;
+    box-shadow:         -1px 1px 4px 3px #222222;
+}
+
+.listItemStyle {
+    background: #253238;
+    border-color: #253238;
+    border-bottom-color: #394d56;
+    margin-top: 1px;
+    color: #b2b3b3;
+}
+
+.list-group-item:hover {
+    background: #28353b;
+    color: #fefffe;
+}
+
+.nothingStyle {
+    color: #91989b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    line-height: 150px;
+}

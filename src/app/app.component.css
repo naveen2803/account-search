@@ -1,0 +1,14 @@
+.containerPadding {
+    padding: 40px 30px;
+}
+.headingStyle {
+    font-family: 'Roboto', sans-serif;
+    color: #fefffe;
+    font-size: 50px;
+}
+
+.subheadingStyle {
+    font-family: 'Roboto', sans-serif;
+    color: #91989b;
+    font-size: 14px;
+}

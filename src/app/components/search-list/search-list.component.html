@@ -1,0 +1,40 @@
+<div>
+  <div class='panel-body'>
+      <div class='row'>
+          <div class="col-md-8 col-md-offset-2">
+              <div class="input-group">
+                  <input [(ngModel)]='listFilter' type='text' class="form-control searchBoxStyle" placeholder="Search for..." (ngModelChange)="modelUpdateEvent($event)"/>
+                  <span class="input-group-btn">
+                    <button [className]="btnClass" [disabled]="isDisabled" type="button" (click) = "clearSearch()">Clear Search</button>
+                  </span>
+              </div>
+          </div>
+      </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-3 projectContainerStyle">
+          <div *ngIf='projectsFilterList && projectsFilterList.length' >
+            <p class="subheadingStyle">Accounts</p>
+            <div class="list-group">
+              <a *ngFor='let project of projects | projectFilter:listFilter' class="list-group-item list-group-item-action listItemStyle" (click) = 'showProjectAlert(project)'>{{ project.AccountName }}</a>
+            </div>
+          </div>
+      </div>
+      
+      <div class="col-sm-12 col-md-8 projectContainerStyle">
+        <div *ngIf='projectsFilterList && projectsFilterList.length && selectedProject != null' >  
+          <p class="subheadingStyle">Properties</p>
+          <div class="list-group">
+            <a *ngFor='let prop of selectedProject.Properties' class="list-group-item list-group-item-action listItemStyle" (click) = 'showPropertyAlert(prop)'>{{ prop.Name }}</a>
+          </div>
+        </div>
+        <div *ngIf='projectsFilterList && projectsFilterList.length == 0'>
+          <p align="center" class="nothingStyle">No matches</p>
+        </div>
+      </div>
+
+    </div>  
+
+    <app-alert *ngIf='projectsFilterList && projectsFilterList.length && alertMessage != ""' [message]='alertMessage'></app-alert>
+  </div>
+</div>
